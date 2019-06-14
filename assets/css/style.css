@@ -1,6 +1,7 @@
 #pageHeading{
     color: purple;
     background-color: white;
+    text-align: center;
 }
 body{
    background-image: url(../images/Tower.png)
@@ -8,4 +9,7 @@ body{
 
 p{
     background-color: white;
+}
+#correctLetters{
+    text-align: center;
 }

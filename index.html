@@ -25,40 +25,38 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <p>Save the town by guessing the correct letters to fill in the blanks. All words are themed off of
-                    Courage the Cowardly Dog.</p>
+                <p id = "Rules">Save the town by guessing the correct letters to fill in the blanks. All words are themed off of
+                    Courage the Cowardly Dog.</p> <!-- Rules-->
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <p> _ _ _ _ _ _ _ _ </p>
-                <!-- display word here. look for correct letter guesses(onkeyup) then return(?) here-->
+                <p id = "correctLetters"> ____ ____ ____ ____ ____ ____ ____ ____ </p>
+                <!-- display word here. look for correct letter guesses(onkeyup) then return here from an if statement in a for loop-->
             </div>
         </div>
-
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col">
-                <p>Wins:</p>
+                <p id = "Wins">Wins: _</p> <!-- This number will change if all letters are guess (?) -->
             </div>
             <div class="col">
-                <p>Loses:</p>
+                <p id = "Loses">Loses: _</p> <!-- This number changes if 6 wrong letters are guessed-->
             </div>
             <div class="col">
-                <p>Number of Guesses Remaining</p>
+                <p id = "guessesRemaining">Number of Guesses Remaining: _</p><!-- Look for a wrong letter guessed and print to screen-->
             </div>
         </div>
     </div>
 
-
-
     <div class="container">
         <div class="row">
             <div class="col">
-                <p>Letters Already Guessed:</p> <!-- underline. put rules here-->
+                <p id = "wrongLetters">Letters Already Guessed: _ _ _ _</p>
+                <!-- guessed letters here. should be a return of a else statement in a for loop-->
             </div>
         </div>
     </div>
