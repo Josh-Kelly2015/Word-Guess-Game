@@ -3,26 +3,45 @@ var guessingWords = ["courage", "muriel", "mallet", "eustace"]
 var wins
 var loses
 var guessesRemaining
-var correctLetters
+
 var wrongLetters
 // var guesses
 //alert to begin game. refresh to test.
-alert("Press any key to begin!")
+alert("Click okay to begin!")
 
 
 //call a random word 
- var randomWord = guessingWords[Math.floor(Math.random() * guessingWords.length)];
+var randomWord = guessingWords[Math.floor(Math.random() * guessingWords.length)];
+console.log(randomWord);
 
-//console.log(randomWord(guessingWords));
 
 //display random word in my correctLetters div as _ _ _ _ 
-document.getElementById("correctLetters").innerHTML = randomWord.replace(/[a-z]/gi, ' _ ');
-
+var blanks = randomWord.replace(/[a-z]/gi, ' _ ');
+document.getElementById("correctLetters").innerHTML = blanks
 // console.log(randomWord.replace(/[a-z]/gi, ' _ '));
+
+
 //listen for key strokes from the user to determine if those keys are part of the word
-document.addEventListener("KeyboardEvent", function() {
-    
-}
+document.addEventListener("keyup", function (event) {
+    console.log(event.key);
+
+    // if true replace _ with its correct value
+    if (randomWord.includes(event.key)) {
+        // console.log("that letter is in the word");
+        
+
+            document.getElementById("correctLetters").innerHTML = (event.key)
+
+    }
+
+    else {
+        console.log("not in the word");
+        // console.log(randomWord);
+        // console.log(event.key);
+        document.getElementById("wrongLetters").innerHTML = (event.key)
+    }
+})
+
 
 
 
