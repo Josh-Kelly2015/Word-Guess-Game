@@ -16,8 +16,7 @@ console.log(randomWord);
 
 
 //display random word in my correctLetters div as _ _ _ _ 
-var blanks = randomWord.replace(/[a-z]/gi, ' _ ');
-document.getElementById("correctLetters").innerHTML = blanks
+document.getElementById("correctLetters").innerHTML = randomWord.replace(/[a-z]/gi, ' _ ');
 // console.log(randomWord.replace(/[a-z]/gi, ' _ '));
 
 
@@ -27,10 +26,9 @@ document.addEventListener("keyup", function (event) {
 
     // if true replace _ with its correct value
     if (randomWord.includes(event.key)) {
-        // console.log("that letter is in the word");
-        
-
-            document.getElementById("correctLetters").innerHTML = (event.key)
+        console.log("that letter is in the word");
+        var newStr = event.key.replace(randomWord);
+        document.getElementById("correctLetters").innerHTML = newStr;
 
     }
 
