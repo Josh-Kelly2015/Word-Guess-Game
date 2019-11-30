@@ -1,15 +1,11 @@
-#pageHeading{
-    color: purple;
-    background-color: white;
-    text-align: center;
+body {
+  background-image: url(../images/Tower.png);
 }
-body{
-   background-image: url(../images/Tower.png)
-}
-
-p{
-    background-color: white;
-}
-#correctLetters{
-    text-align: center;
+h1,
+h4,
+h6 {
+  background-color: white;
+  color: purple;
+  padding: 5px;
+  border-radius: 4px;
 }

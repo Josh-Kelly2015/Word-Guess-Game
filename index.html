@@ -1,68 +1,64 @@
 <!DOCTYPE html>
 <html class="no-js">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Word Guess Homework</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type=text/css href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type=text/css href="assets/css/style.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 id="pageHeading">Courage's Experience</h1>
-            </div>
+    <title>Word Guess Game</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 id="pageHeading">Courage's Experience</h1>
         </div>
+
+        <div class="row">
+          <h6 id="Rules">
+            Save the town by guessing the correct letters to fill in the blanks.
+            All words are themed off of Courage the Cowardly Dog. Type your
+            guesses to begin!
+          </h6>
+          <!-- Rules-->
+        </div>
+        <div class="row justify-content-center"><h4>Do Your Worst!</h4></div>
+
+        <div class="row justify-content-center">
+          <h4 id="correctLetters"></h4>
+          <!-- display word here. look for correct letter guesses(onkeyup) then return here from an if statement in a for loop-->
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <h4 id="Wins">Wins:</h4>
+            <!-- This number will change if all letters are guess (?) -->
+          </div>
+          <div class="col-4">
+            <h4 id="Loses">Loses:</h4>
+            <!-- This number changes if 6 wrong letters are guessed-->
+          </div>
+          <div class="col-4">
+            <h4 id="guessesRemaining">Guesses Remaining:</h4>
+            <!-- Look for a wrong letter guessed and print to screen-->
+          </div>
+
+          <div class="col">
+            <h4 id="wrongLetters">Graveyard:</h4>
+            <!-- guessed letters here. should be a return of a else statement in a for loop-->
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p id = "Rules">Save the town by guessing the correct letters to fill in the blanks. All words are themed off of
-                    Courage the Cowardly Dog. Type your guesses to begin!</p> <!-- Rules-->
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <p id = "correctLetters"></p>
-                <!-- display word here. look for correct letter guesses(onkeyup) then return here from an if statement in a for loop-->
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p id = "Wins">Wins: _</p> <!-- This number will change if all letters are guess (?) -->
-            </div>
-            <div class="col">
-                <p id = "Loses">Loses: _</p> <!-- This number changes if 6 wrong letters are guessed-->
-            </div>
-            <div class="col">
-                <p id = "guessesRemaining">Number of Guesses Remaining: _</p><!-- Look for a wrong letter guessed and print to screen-->
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p id = "wrongLetters">Letters Already Guessed: _ _ _ _</p>
-                <!-- guessed letters here. should be a return of a else statement in a for loop-->
-            </div>
-        </div>
-    </div>
-
 
     <script src="assets/javascript/game.js"></script>
-</body>
-
+  </body>
 </html>
