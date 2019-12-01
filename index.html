@@ -19,46 +19,44 @@
     <div class="container-fluid">
       <div class="container">
         <div class="row justify-content-center">
-          <h1 id="pageHeading">Courage's Experience</h1>
+          <h1>Courage's Experience</h1>
         </div>
-
+        <!-- Rules-->
         <div class="row">
-          <h6 id="Rules">
+          <h6>
             Save the town by guessing the correct letters to fill in the blanks.
             All words are themed off of Courage the Cowardly Dog. Type your
             guesses to begin!
           </h6>
-          <!-- Rules-->
         </div>
-        <div class="row justify-content-center"><h4>Do Your Worst!</h4></div>
-
         <div class="row justify-content-center">
-          <h4 id="correctLetters"></h4>
-          <!-- display word here. look for correct letter guesses(onkeyup) then return here from an if statement in a for loop-->
+          <h4>Decode the word below</h4>
         </div>
-
+        <!-- WORD TO GUESS display word here. look for correct letter guesses(onkeyup) then return here from an if statement in a for loop-->
+        <div class="row justify-content-center">
+          <h4 id="wordAtPlay"></h4>
+        </div>
+        <!-- Game Stats -->
         <div class="row">
+          <!-- WINS This number will change if all letters are guess (?) -->
           <div class="col-4">
-            <h4 id="Wins">Wins:</h4>
-            <!-- This number will change if all letters are guess (?) -->
+            <h4 id="wins">Wins:</h4>
           </div>
+          <!-- LOSES This number changes if 6 wrong letters are guessed-->
           <div class="col-4">
-            <h4 id="Loses">Loses:</h4>
-            <!-- This number changes if 6 wrong letters are guessed-->
+            <h4 id="loses">Loses:</h4>
           </div>
+          <!-- LIVES Look for a wrong letter guessed and print to screen-->
           <div class="col-4">
-            <h4 id="guessesRemaining">Guesses Remaining:</h4>
-            <!-- Look for a wrong letter guessed and print to screen-->
+            <h4 id="guessesRemaining">Lives:</h4>
           </div>
-
+          <!-- GRAVEYARD guessed letters here. should be a return of a else statement in a for loop-->
           <div class="col">
             <h4 id="wrongLetters">Graveyard:</h4>
-            <!-- guessed letters here. should be a return of a else statement in a for loop-->
           </div>
         </div>
       </div>
     </div>
-
     <script src="assets/javascript/game.js"></script>
   </body>
 </html>
